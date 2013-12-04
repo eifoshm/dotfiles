@@ -12,7 +12,7 @@ else
 	if [[ $EMAIL = "1" ]]; then
 		EML_TEXT="$EMAIL new email"
 	else
-		EML_TEXT="$EMAIL new mails"
+		EML_TEXT="$EMAIL new emails"
 	fi
 fi
 
