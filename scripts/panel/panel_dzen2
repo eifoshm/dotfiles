@@ -111,5 +111,5 @@ while read -r line ; do
             center_indent=$(( (screen_width - center_width) / 2 ))
         fi
     fi
-    printf "%s\n" "^pa($left_indent) ^fg($PANEL_COLOR_ICON)^i(/home/mfin/.scripts/icons/arch_10x10.xbm)$wm_infos   $(applet_mpd)^pa($right_indent)$sys_infos"
+    printf "%s\n" "^pa($left_indent) ^fg($PANEL_COLOR_ICON)^i(/home/mfin/.scripts/panel/icons/arch_10x10.xbm)$wm_infos   $(applet_mpd)^pa($right_indent)$sys_infos"
 done
