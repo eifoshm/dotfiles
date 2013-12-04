@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source $(dirname $0)/panel_colors
+
+CURRENT=$(mpc current)
+
+if [ "$CURRENT" = "" ]; then
+    break
+else
+    echo "^fg($PANEL_COLOR_ICON)^i($PANEL_ICON_DIR/phones.xbm)^fg($PANEL_COLOR_TEXT) $CURRENT"
+fi

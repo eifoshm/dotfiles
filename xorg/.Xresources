@@ -1,0 +1,42 @@
+! ----------------------------------------------------------------------------
+! file:     ~/.Xresources
+! author:   Cloud
+! vim:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+! ----------------------------------------------------------------------------
+
+! Fonts
+##define FONT           xft:Terminess\ Powerline:regular:pixelsize=9
+#define FONT            -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-u
+! Colors
+#include "/home/mfin/.config/colors/darkish"
+
+*background: #333333
+*foreground: #c0c0c0
+
+*font:          FONT
+*fontbold:      FONT
+
+Xft.antialias:  1
+Xft.autohint:   0
+Xft.dpi:        96
+Xft.hinting:    1
+Xft.hintstyle:  hintfull
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+! Terminal
+URxvt.matcher.button:    1
+URxvt.perl-ext-common:   default,matcher,clipboard
+URxvt.colorUL:           #86a2be
+URxvt.InternalBorder:    0
+URxvt.externalBorder:    0
+URxvt*cursorColor:       #c0c0c0
+URxvt*underlineColor:   #899ca1
+URxvt*scrollBar:         False
+URxvt*saveLines:         1000
+URxvt*skipScroll:        False
+URxvt*secondaryWheel:    true
+URxvt.inputMethod:       ibus
+URxvt.preeditType:       OverTheSpot
+
+Xcursor.theme: 		 default

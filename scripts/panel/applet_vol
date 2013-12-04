@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source $(dirname $0)/panel_colors
+
+AMASTER=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $4}'`
+ASTAT=`amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $6}'`
+
+if [[ $ASTAT = "on" ]]; then
+	ICON="spkr_01.xbm"
+else
+	ICON="spkr_04.xbm"
+fi
+
+ICON="^i($PANEL_ICON_DIR/$ICON)"
+echo "^fg($PANEL_COLOR_ICON)$ICON ^fg($PANEL_COLOR_TEXT)$AMASTER%"

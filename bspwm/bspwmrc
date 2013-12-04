@@ -1,0 +1,14 @@
+#! /bin/sh
+
+bspc monitor -d "nil" "term" "web" "fun" "work" "misc"
+
+bspc config border_width        1
+bspc config window_gap          6
+bspc config split_ratio         0.50
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config top_padding         18
+bspc config focused_border_color "#cd749c"
+bspc config normal_border_color "#5d6f74"
+
+panel dzen2 &

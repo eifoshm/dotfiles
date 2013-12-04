@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source $(dirname $0)/panel_colors
+
+WIFI=`iwgetid --raw`
+
+ICON="^i($PANEL_ICON_DIR/wifi_02.xbm)"
+echo "^fg($PANEL_COLOR_ICON)$ICON ^fg($PANEL_COLOR_TEXT)$WIFI"

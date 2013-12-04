@@ -1,0 +1,18 @@
+#!/bin/bash
+
+source $(dirname $0)/panel_colors
+
+BAT=`acpi -b | awk '{gsub(/%,/,""); print $4}' | sed 's/%//g'`
+STATUS=`acpi -b | awk '{gsub(/,/,""); print $3}'`
+
+if [[ $STATUS = "Charging" ]]; then
+	ICON="ac_01.xbm"
+	BAT_TEXT="$BAT%"
+else
+	ICON="bat_full_02.xbm"
+	BAT_TEXT="$BAT%, $(acpi -b | awk '{gsub(/%,/,""); print $5}')"
+fi
+
+ICON="^i($PANEL_ICON_DIR/$ICON)"
+
+echo "^fg($PANEL_COLOR_ICON)$ICON ^fg($PANEL_COLOR_TEXT)$BAT_TEXT"
