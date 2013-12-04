@@ -8,6 +8,8 @@ This repo contains (almost) all my current configs.
 * ncmpcpp: music player setup
 * scripts: all my scripts (+ bspwm panel executables)
 * xorg: visual stuff (colors + urxvtd/urxvtc)
+* icons: GTK icons
+* fonts: fonts I use
 
 Screenshot
 ----------
