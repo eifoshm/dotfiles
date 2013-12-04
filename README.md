@@ -14,4 +14,4 @@ This repo contains (almost) all my current configs.
 Screenshot
 ----------
 
-![screenshot](http://hcd-1.imgbox.com/abyI1R2H.png?st=CQUhSZRS-9CqN5x6_cPLgQ&e=1386159270 "screenshot")
+![screenshot](http://i.imgur.com/roVAU0q.png "screenshot")
