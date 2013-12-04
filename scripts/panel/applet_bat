@@ -10,8 +10,7 @@ if [[ $STATUS = "Charging" ]]; then
 	BAT_TEXT="$BAT%"
 else
 	ICON="bat_full_02.xbm"
-	BAT_TEXT="$BAT%, $(acpi -b | awk '{gsub(/%,/,""); print $5}')
-	"
+	BAT_TEXT="$BAT%, $(acpi -b | awk '{gsub(/%,/,""); print $5}')"
 fi
 
 ICON="^i($PANEL_ICON_DIR/$ICON)"
