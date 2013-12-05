@@ -25,7 +25,7 @@ case "$flavor" in
         ;;
     dzen2)
         . panel_colors
-		FONT_FAMILY='Terminus'
+	FONT_FAMILY='-misc-terminusmod,icons-medium-r-normal--12-120-72-72-c-60-*-*'
         FONT_SIZE=12
         cat "$PANEL_FIFO" | panel_dzen2 -f "$FONT_FAMILY" -s "$FONT_SIZE" | dzen2 -h $PANEL_HEIGHT -dock -ta l -title-name panel -fn "${FONT_FAMILY}:pixelsize=${FONT_SIZE}" -fg "$COLOR_FOREGROUND" -bg "$COLOR_BACKGROUND" &
         ;;

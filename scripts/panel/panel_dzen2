@@ -2,13 +2,13 @@
 #
 # Example panel for dzen2
 
-font_family='Terminus'
+font_family='-misc-terminusmod,icons-medium-r-normal--12-120-72-72-c-60-*-*'
 font_size=12
 
 . panel_colors
 
 adaptive_centering=0
-screen_width=1317
+screen_width=1328
 NORMIFS=$IFS
 FIELDIFS=':'
 PADDING=' '
