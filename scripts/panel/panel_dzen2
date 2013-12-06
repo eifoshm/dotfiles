@@ -8,7 +8,7 @@ font_size=12
 . panel_colors
 
 adaptive_centering=0
-screen_width=1328
+screen_width=1322
 NORMIFS=$IFS
 FIELDIFS=':'
 PADDING=' '
