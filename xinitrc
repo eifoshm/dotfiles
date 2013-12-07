@@ -9,16 +9,17 @@ xset fp rehash &
 nitrogen --restore &
 
 setxkbmap si &
-thunar --daemon &
-udiskie &
 xset r rate 250 25 &
 xset b off &
 xsetroot -cursor_name left_ptr &
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources &
 
+unclutter -root -noevents &
+
 sxhkd &
 mpd /home/mfin/.mpd/mpd.conf &
 urxvtd -q -o -f &
+udiskie &
 
 pidof mpdas >& /dev/null
 if [ $? -ne 0 ]; then

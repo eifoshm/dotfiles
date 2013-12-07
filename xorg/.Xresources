@@ -5,16 +5,17 @@
 ! ----------------------------------------------------------------------------
 
 ! Fonts
-##define FONT           xft:Terminess\ Powerline:regular:pixelsize=9
-#define FONT            -*-terminus-medium-r-*-*-12-*-*-*-*-*-*-u
-! Colors
-#include "/home/mfin/.config/colors/darkish"
+#define FONT            -*-tamsyn-medium-r-*-*-14-*-*-*-*-*-*-*
+#define FONTBOLD            -*-tamsyn-bold-r-*-*-14-*-*-*-*-*-*-*
 
-*background: #333333
-*foreground: #c0c0c0
+! Colors
+#include "/home/mfin/.config/colors/myown2"
+
+*background: #222222
+*foreground: #93a1a1
 
 *font:          FONT
-*fontbold:      FONT
+*fontbold:      FONTBOLD
 
 Xft.antialias:  1
 Xft.autohint:   0
@@ -30,11 +31,12 @@ URxvt.perl-ext-common:   default,matcher,clipboard
 URxvt.colorUL:           #86a2be
 URxvt.InternalBorder:    0
 URxvt.externalBorder:    0
-URxvt*cursorColor:       #c0c0c0
-URxvt*underlineColor:   #899ca1
-URxvt*scrollBar:         False
+URxvt*cursorColor:       #dc322f
+URxvt.cursorBlink: 1
+URxvt*underlineColor:   #dc322f
+URxvt*scrollBar:         false
 URxvt*saveLines:         1000
-URxvt*skipScroll:        False
+URxvt*skipScroll:        false
 URxvt*secondaryWheel:    true
 URxvt.inputMethod:       ibus
 URxvt.preeditType:       OverTheSpot
