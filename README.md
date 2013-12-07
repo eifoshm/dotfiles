@@ -14,4 +14,4 @@ This repo contains (almost) all my current configs.
 Screenshot
 ----------
 
-![screenshot](http://i.imgur.com/roVAU0q.png "screenshot")
+![screenshot](http://i.imgur.com/ISwl3Jv.jpg "screenshot")
