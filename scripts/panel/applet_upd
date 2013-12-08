@@ -1,0 +1,17 @@
+#!/bin/bash
+
+source $(dirname $0)/panel_colors
+
+UPD=`pacman -Qu | wc -l`
+ICON="pacman.xbm"
+
+if [[ $UPD = "0" ]]; then
+	TXT="no updates"
+elif [[ $UPD = "1" ]]; then
+	TXT="1 update"
+else
+	TXT="$UPD updates"
+fi
+
+ICON="^i($PANEL_ICON_DIR/$ICON)"
+echo "^fg($PANEL_COLOR_ICON)$ICON ^fg($PANEL_COLOR_TEXT)$TXT"
