@@ -2,6 +2,7 @@ dotfiles
 ========
 
 This repo contains (almost) all my current configs.
+*This repo is outdated. I'm working on a new version, since I moved away from bspwm.*
 
 * bspwm: WM config
 * sxhkd: keybindings
